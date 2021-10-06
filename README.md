@@ -1,3 +1,3 @@
 # Shopping-cart
 Shopping-cart...js
-live: https://abdullahahmed11.github.io/Shopping-cart/
+live: https://dreamy-haibt-001c3b.netlify.app/
