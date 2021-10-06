@@ -1,0 +1,240 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Oswald", sans-serif;
+}
+.container {
+  width: 80%;
+  margin: auto;
+}
+a {
+  text-decoration: none;
+}
+header {
+  background: #333;
+  padding: 10px 0;
+}
+.header-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header-content .brand {
+  color: #fff;
+  font-size: 32px;
+}
+nav ul {
+  display: flex;
+  list-style: none;
+  align-items: center;
+}
+nav ul#user-info {
+  display: none;
+}
+#user-info li {
+  position: relative;
+  margin-right: 0 10px;
+}
+#user-info li i {
+  color: #fff;
+  font-size: 13px;
+  cursor: pointer;
+}
+#user-info li .badge {
+  width: 20px;
+  height: 20px;
+  background: red;
+  color: #fff;
+  display: block;
+  text-align: center;
+  position: absolute;
+  font-size: 10px;
+  line-height: 20px;
+  top: -9px;
+  right: -10px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  display: none;
+}
+#user-info .carts-products {
+  position: absolute;
+  width: 200px;
+  display: none;
+  background: #eaeaea;
+  padding: 10px;
+  top: 46px;
+  border: 1px solid green;
+  transform: translate(-42%, 0);
+  -webkit-transform: translate(-42%, 0);
+  -moz-transform: translate(-42%, 0);
+  -ms-transform: translate(-42%, 0);
+  -o-transform: translate(-42%, 0);
+}
+#user-info .carts-products a {
+  display: block;
+  margin-left: auto;
+  padding: 10px 20px;
+  font-size: 14px;
+  background: darkgreen;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  font-family: "Oswald", sans-serif;
+  text-align: center;
+}
+nav ul li a {
+  display: block;
+  color: #fff;
+  min-width: 50px;
+  padding: 5px;
+  margin: 0 5px;
+}
+/* end of header  */
+/* start media  */
+@media (max-width: 767px) {
+  .header-content .brand {
+    font-size: 17px;
+  }
+}
+
+.home input {
+  width: 100%;
+  height: 40px;
+  margin: 10px 0;
+  display: block;
+  padding: 5px;
+  font-size: 17px;
+  font-family: "Oswald", sans-serif;
+  border: 1px solid #b5b5b5;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+/* products  */
+.products {
+  width: 60%;
+  margin: 10px 0;
+  float: left;
+}
+.products .product-item {
+  display: flex;
+  width: 100%;
+  border: 2px solid #ddd;
+  margin-bottom: 15px;
+  min-height: 150px;
+}
+.product-item-img {
+  width: 25%;
+  margin-right: 10px;
+}
+.product-item-desc a {
+  display: block;
+  font-size: 25px;
+  color: #000;
+  font-family: "Oswald", sans-serif;
+  cursor: pointer;
+}
+.product-item-action {
+  flex: 1;
+  display: flex;
+  text-align: right;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.product-item .add-to-cart {
+  display: block;
+  margin-left: auto;
+  padding: 10px 20px;
+  font-size: 14px;
+  background: darkgreen;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  font-family: "Oswald", sans-serif;
+}
+.product-item .fav {
+  display: block;
+  cursor: pointer;
+  width: 20px;
+  margin-left: auto;
+}
+.product-filter {
+  float: right;
+  width: 30%;
+  margin: 10px 0;
+}
+@media (max-width: 767px) {
+  .home .products {
+    /* float: none; */
+    width: 100%;
+  }
+  .home .product-item-desc a {
+    font-size: 15px;
+    font-weight: bold;
+  }
+  .product-item .add-to-cart {
+    font-size: 10px;
+  }
+}
+
+/* size selcet  */
+#size-select {
+  display: block;
+  width: 100%;
+  height: 40px;
+}
+@media (max-width: 767px) {
+  .home .product-filter {
+    display: none;
+  }
+}
+
+/* cart details  */
+.item-detials img {
+  width: 100%;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  padding: 2px;
+  height: 400px;
+  object-fit: cover;
+}
+
+/* createproduct  */
+.create-product {
+  position: fixed;
+  bottom: 35px;
+  right: 35px;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  background-color: #52057b;
+  color: #fff;
+  text-align: center;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+.create-product:hover {
+  opacity: 0.8;
+}
+.user-avtar {
+  margin: 10px 0;
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
